@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Time CSS Esportivo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade -->
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #002244;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    main {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem;
+      background-color: #f0f0f5;
+      flex-wrap: wrap; /* permite quebrar em telas menores */
+    }
+
+    .texto {
+      flex: 1;
+      padding-right: 2rem;
+      min-width: 280px;
+    }
+
+    .texto h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .descricao {
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    .imagem-jogador {
+      flex: 1;
+      max-width: 100%;
+      height: auto;
+      max-height: 400px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      min-width: 280px;
+      margin-top: 1rem;
+    }
+
+    .acoes {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+
+    .acoes a {
+      text-decoration: none;
+    }
+
+    .acoes button {
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .acoes button:hover {
+      background-color: #005fa3;
+    }
+
+    footer {
+      background-color: #002244;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    /* Responsividade com media queries */
+    @media (max-width: 768px) {
+      main {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+      }
+
+      .texto {
+        padding-right: 0;
+      }
+
+      .imagem-jogador {
+        margin-top: 1.5rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header {
+        padding: 1rem;
+      }
+
+      .texto h2 {
+        font-size: 1.5rem;
+      }
+
+      .descricao {
+        font-size: 1rem;
+      }
+
+      .acoes button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🏆 Guilherme</h1>
+    <p>Estilo é o nosso jogo!</p>
+  </header>
+
+  <main>
+    <div class="texto">
+      <p class="descricao">UI/UX DESIGNER & DEVELOPER</p>
+      <h2>I'M GUILHERMO FREITAS</h2>
+    </div>
+    <img src="Guilherme Pires.jpg" alt="Jogador em campo estilizado com CSS" class="imagem-jogador">
+  </main>
+
+  <div class="acoes">
+    <a href="sobre.html"><button class="sobre">sobre_mim_texto</button></a>
+    <a href="Contatos.html"><button class="contatos">Contatos</button></a>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Time CSS. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
